@@ -1,0 +1,7 @@
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents/obj/Release/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents/bin/Release/Xamarin.Forms.Core.dll
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents/bin/Release/Xamarin.Forms.Xaml.dll
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents/bin/Release/UISharedComponents.dll.mdb
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents/bin/Release/UISharedComponents.dll
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents/obj/Release/UISharedComponents.dll
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents/obj/Release/UISharedComponents.dll.mdb

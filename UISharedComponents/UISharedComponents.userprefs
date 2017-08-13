@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{83C0F82C-49E7-4F21-BA53-BD75B1C946C1}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CustomFontLabel.cs">
+    <Files>
+      <File FileName="CustomFontLabel.cs" Line="1" Column="1" />
+      <File FileName="packages.config" Line="1" Column="1" />
+      <File FileName="CustomTimePicker.cs" Line="4" Column="34" />
+      <File FileName="../UISharedComponents-iOS/CustomAnimationRenderer.cs" Line="42" Column="13" />
+      <File FileName="CustomAnimation.cs" Line="1" Column="1" />
+      <File FileName="CustomEditor.cs" Line="1" Column="1" />
+      <File FileName="../UISharedComponents-Android/CustomEntryRenderer.cs" Line="1" Column="1" />
+      <File FileName="../UISharedComponents-Android/ImageSource.cs" Line="1" Column="1" />
+      <File FileName="../UISharedComponents-Android/CustomFontLabelRenderer.cs" Line="9" Column="1" />
+      <File FileName="../UISharedComponents-Android/CustomButtonRenderer.cs" Line="1" Column="1" />
+      <File FileName="../UISharedComponents-Android/CustomTimePicker.cs" Line="1" Column="1" />
+      <File FileName="../UISharedComponents-iOS/CustomControls.cs" Line="1" Column="1" />
+      <File FileName="TestUIExample/TestUIExamplePage.xaml" Line="3" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UISharedComponents-Android PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MultiItemStartupConfigurations />
+</Properties>

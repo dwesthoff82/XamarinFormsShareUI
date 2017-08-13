@@ -1,0 +1,12 @@
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents-iOS/obj/Release/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents-iOS/obj/Release/optimized/
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents-iOS/bin/Release/Xamarin.Forms.Platform.iOS.dll
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents-iOS/bin/Release/Xamarin.Forms.Core.dll
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents-iOS/bin/Release/Xamarin.Forms.Xaml.dll
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents-iOS/bin/Release/Xamarin.Forms.Platform.dll
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents-iOS/bin/Release/UISharedComponents.dll
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents-iOS/bin/Release/UISharedComponents.dll.mdb
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents-iOS/bin/Release/UISharedComponents-iOS.dll.mdb
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents-iOS/bin/Release/UISharedComponents-iOS.dll
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents-iOS/obj/Release/UISharedComponents-iOS.dll
+/Users/dwesthoff/Desktop/E1Mobile/UISharedComponents-iOS/obj/Release/UISharedComponents-iOS.dll.mdb

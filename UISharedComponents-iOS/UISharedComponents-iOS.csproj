@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{523C0BB3-7F29-466F-86EB-657BCD376FD1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UISharedComponentsiOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>UISharedComponents-iOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\..\..\..\Projects\TagEm\packages\Xamarin.Forms.2.3.3.168\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\..\..\..\Projects\TagEm\packages\Xamarin.Forms.2.3.3.168\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\..\..\..\Projects\TagEm\packages\Xamarin.Forms.2.3.3.168\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\..\..\..\Projects\TagEm\packages\Xamarin.Forms.2.3.3.168\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Circle.cs" />
+    <Compile Include="CircleRenderer.cs" />
+    <Compile Include="CurvedStackLayout.cs" />
+    <Compile Include="CustomAnimationRenderer.cs" />
+    <Compile Include="CustomButtonRenderer.cs" />
+    <Compile Include="CustomDatePickerRenderer.cs" />
+    <Compile Include="CustomEditorRenderer.cs" />
+    <Compile Include="CustomEntryRenderer.cs" />
+    <Compile Include="CustomFontLabelRenderer.cs" />
+    <Compile Include="CustomImagePickerRenderer.cs" />
+    <Compile Include="CustomListViewRenderer.cs" />
+    <Compile Include="CustomPickerRenderer.cs" />
+    <Compile Include="CustomTimePickerRenderer.cs" />
+    <Compile Include="CustomWebViewRenderer.cs" />
+    <Compile Include="InsetEntry.cs" />
+    <Compile Include="LabelWithPadding.cs" />
+    <Compile Include="NativeRectangle.cs" />
+    <Compile Include="ResourceImageRenderer.cs" />
+    <Compile Include="RoundedRectangleRenderer.cs" />
+    <Compile Include="SegmentedCircleNative.cs" />
+    <Compile Include="SegmentedCircleRenderer.cs" />
+    <Compile Include="SquareRenderer.cs" />
+    <Compile Include="TextViewHint.cs" />
+    <Compile Include="ModalDatePicker\CustomPickerModel.cs" />
+    <Compile Include="ModalDatePicker\ModalPickerAnimatedDismissed.cs" />
+    <Compile Include="ModalDatePicker\ModalPickerAnimatedTransitioning.cs" />
+    <Compile Include="ModalDatePicker\ModalPickerTransitionDelegate.cs" />
+    <Compile Include="ModalDatePicker\ModalPickerViewController.cs" />
+    <Compile Include="CustomControls.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.3.0.107\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.0.107\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UISharedComponents\UISharedComponents.csproj">
+      <Project>{687E883E-D7FC-4828-B647-D655C1EC0E4F}</Project>
+      <Name>UISharedComponents</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\..\..\..\Projects\TagEm\packages\Xamarin.Forms.2.3.3.168\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\..\..\Projects\TagEm\packages\Xamarin.Forms.2.3.3.168\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+</Project>
