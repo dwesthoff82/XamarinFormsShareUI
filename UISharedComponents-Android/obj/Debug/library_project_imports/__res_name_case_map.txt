@@ -1,3 +1,0 @@
-values/Strings.xml;values/strings.xml
-drawable/Border.xml;drawable/border.xml
-drawable/RoundedRectShape.xml;drawable/roundedrectshape.xml
