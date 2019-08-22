@@ -56,7 +56,6 @@
     <Compile Include="CustomListViewRenderer.cs" />
     <Compile Include="CustomPickerRender.cs" />
     <Compile Include="CustomTimePicker.cs" />
-    <Compile Include="ImageSource.cs" />
     <Compile Include="Init.cs" />
     <Compile Include="NativeCircle.cs" />
     <Compile Include="NavRenderer.cs" />

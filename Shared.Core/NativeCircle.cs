@@ -41,7 +41,9 @@ namespace Shared.Core
 			Paint pt = new Paint ();
 			pt.Color = Color.Black;
             pt.AntiAlias = true;
-            canvas.DrawCircle (canvas.Width/2.0f, canvas.Height/5.0f, (float)Radius*2, pt);
+
+            //TODO: this needs to be modified to account for the density of the screen. 
+            canvas.DrawCircle ((float)Radius, (float)Radius, (float)Radius, pt);
 		
 		}
 	}

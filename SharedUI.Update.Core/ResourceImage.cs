@@ -25,17 +25,12 @@ namespace AndHow.SharedComponents
 		}
 		public Func<Stream> Func{ get; set; }
 		public SourceTypes SourceType{ get; set;}
-		public string ResName{ get; set;}
+		public string ResourceName{ get; set;}
 		public ResourceImage ()
 		{
 		}
 
-		public ResourceImage (string name)
-		{
-			ResName = name;
-
-		}
-
+		
 		public ResourceImage(Func<Stream> func){
 		
 			SourceType = SourceTypes.Function;
