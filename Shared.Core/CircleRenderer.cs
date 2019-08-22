@@ -13,6 +13,8 @@ namespace Shared.Core
 {
 	public class CircleRenderer : ViewRenderer
 	{
+
+       
         public CircleRenderer(Context context)
             : base(context)
         { }
@@ -27,8 +29,8 @@ namespace Shared.Core
 				var cn = new NativeCircle(this.Context)
                 {
 
-                    radius = circle.Radius,
-                    color = circle.Color.ToAndroid(),
+                    Radius = circle.Radius,
+                    Color = circle.Color.ToAndroid(),
 
                 };
 

@@ -25,7 +25,7 @@ namespace SharedUI.Update.Droid
 
             Shared.Core.Init.Initialize();//This call makes sure this library is loaded by the dependency service :)
 
-
+          
           
 
             LoadApplication(new App());

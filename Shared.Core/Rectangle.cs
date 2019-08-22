@@ -40,9 +40,9 @@ namespace Shared.Core
             var Rect = new RectF();
 
             Rect.Top = 0;
-            Rect.Bottom = canvas.Height-10;
+            Rect.Bottom = 20;
             Rect.Left = 0;
-            Rect.Right = canvas.Width-10;
+            Rect.Right = 100;// canvas.Width-10;
 
             Paint pt = new Paint();
 

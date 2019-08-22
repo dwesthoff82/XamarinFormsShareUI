@@ -36,7 +36,7 @@ namespace Shared.Core
                     var tf = global::Android.Graphics.Typeface.CreateFromAsset (base.Context.Assets, editorElement.FontName  + ".ttf");
 					Control.Typeface = tf;
 
-					Control.Text = string.Empty;
+					Control.Text = editorElement.Text;
 					Control.SetTextColor(editorElement.TextColor.ToAndroid());
 					Control.Hint = editorElement.Hint;
 					Control.SetHintTextColor(global::Android.Graphics.Color.Gray);
