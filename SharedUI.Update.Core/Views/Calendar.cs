@@ -7,7 +7,7 @@ namespace AndHow.SharedComponents
 	{
 		Grid gridHeader;
 		Grid grid;
-		private Calendar ()//This is a factory you cant have my constructor
+		public Calendar ()//This is a factory you cant have my constructor
 		{
 			BuildHeader ();
 			BuildBody ();
@@ -16,7 +16,7 @@ namespace AndHow.SharedComponents
 		}
 
 
-
+        //TODO: Update to include the intialization of the caldendar with dates....
 
 
 		public void BuildBody(){

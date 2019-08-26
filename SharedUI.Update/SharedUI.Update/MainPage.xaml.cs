@@ -64,7 +64,7 @@ namespace SharedUI.Update
             curvedStackLayout.Children.Add(customDatePicker);
             curvedStackLayout.Children.Add(ctp);
 
-
+            curvedStackLayout.Children.Add(new Calendar());
 
 
 
