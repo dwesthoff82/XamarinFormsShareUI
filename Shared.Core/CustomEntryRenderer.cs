@@ -14,15 +14,7 @@ namespace Shared.Core
     public class CustomEntryRenderer : EntryRenderer
     {
 
-        public static void Init()
-
-        {
-
-            var temp = DateTime.Now;
-
-        }
-
-
+    
         public CustomEntryRenderer(Context context)
             :base(context)
             {}
