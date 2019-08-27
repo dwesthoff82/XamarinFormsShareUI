@@ -43,28 +43,33 @@ namespace SharedUI.Update
 
             CustomTimePicker ctp = new CustomTimePicker(DateTime.Now) { Text="Pick a time"};
 
-            CustomEditor customEditor = new CustomEditor("agencyr", 15)
+      
+
+            Editor editor = new Editor
             {
-                HeightRequest = 300,
-                Text ="This is a custom editor with a really cool border which is infinitely better than the default editor"
+                Text="regular editor",
+                HeightRequest = 100,
+                WidthRequest= 200
+
             };
 
-            curvedStackLayout.Children.Add(customEditor);
-
-
+            curvedStackLayout.Children.Add(editor);
             curvedStackLayout.Children.Add(new Circle
             {
                 Radius = 20,
                 Color = Color.Black,
                 HeightRequest = 100,
-                WidthRequest = 100
+                HorizontalOptions = LayoutOptions.CenterAndExpand
             });
+
+
+
 
             curvedStackLayout.Children.Add(rr);
             curvedStackLayout.Children.Add(customDatePicker);
             curvedStackLayout.Children.Add(ctp);
 
-            curvedStackLayout.Children.Add(new Calendar());
+            curvedStackLayout.Children.Add(new Calendar { HorizontalOptions = LayoutOptions.FillAndExpand, HeightRequest = 200});
 
 
 

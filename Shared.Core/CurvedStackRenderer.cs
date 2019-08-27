@@ -13,13 +13,7 @@ namespace Shared.Core
     {
 
 
-        public static void Init()
-        {
-
-           
-
-        }
-
+     
         public CurvedStackRenderer(Context context)
             : base(context)
         {

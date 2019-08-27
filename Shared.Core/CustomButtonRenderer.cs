@@ -14,7 +14,12 @@ namespace Shared.Core
 	{
         public CustomButtonRenderer(Context context)
             : base(context)
-        { }
+        {
+
+
+
+
+        }
 		protected override void OnElementChanged (ElementChangedEventArgs<Button> e)
 		{
 			base.OnElementChanged (e);

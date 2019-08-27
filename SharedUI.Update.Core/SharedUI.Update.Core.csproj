@@ -5,11 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.6.258-beta" />
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.673156" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="DataAccess\" />
   </ItemGroup>
 
 </Project>
