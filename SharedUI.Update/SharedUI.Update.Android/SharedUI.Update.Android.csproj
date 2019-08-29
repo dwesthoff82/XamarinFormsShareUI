@@ -54,6 +54,9 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.5.231</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.673156" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.1" />
@@ -109,6 +112,10 @@
     <ProjectReference Include="..\..\Shared.Core\Shared.Core.csproj">
       <Project>{6ae25e25-5b21-4352-8a7b-475825ed01f6}</Project>
       <Name>Shared.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SharedUI.Update.Core\SharedUI.Update.Core.csproj">
+      <Project>{9EAC1939-768B-4E3A-BC8F-F261B48A5D8A}</Project>
+      <Name>SharedUI.Update.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\SharedUI.Update\SharedUI.Update.csproj">
       <Project>{EC1EB6B1-4F14-41EA-A471-DC40B75649C9}</Project>

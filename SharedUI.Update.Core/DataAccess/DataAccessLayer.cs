@@ -8,7 +8,7 @@ namespace SharedUI.Update.Core.DataAccess
     public class DataAccessLayer
     {
 
-        SQLiteConnection SQLiteConnection { get; set; }
+        public SQLiteConnection SQLiteConnection { get; set; }
 
 
 
