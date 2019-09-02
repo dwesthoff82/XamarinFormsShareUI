@@ -1,11 +1,20 @@
 ﻿using System;
 using Xamarin.Forms;
 using System.IO;
+using SharedUI.Update.Core.DataAccess;
 
 namespace AndHow.SharedComponents
 {
 	public class ResourceImage :Image
 	{
+        public static DataAccessLayer DataAccessLayer { get; set; }
+
+        public static void Init(DataAccessLayer dataAccessLayer = null)
+        {
+
+            DataAccessLayer = dataAccessLayer;
+
+        }
 		public enum SourceTypes{
 
 			Database,

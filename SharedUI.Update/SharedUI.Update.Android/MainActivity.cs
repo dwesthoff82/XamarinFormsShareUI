@@ -10,6 +10,9 @@ using Android.OS;
 using Xamarin.Forms.Platform.Android;
 using SharedUI.Update.Core.DataAccess;
 using SQLite;
+using System.IO;
+using Environment = System.Environment;
+using AndHow.SharedComponents;
 
 namespace SharedUI.Update.Droid
 {
@@ -33,7 +36,8 @@ namespace SharedUI.Update.Droid
                 SQLiteConnection = GetConnection()
             };
 
-          
+
+            ResourceImage.Init(App.DataAccessLayer);
           
 
             LoadApplication(new App());
@@ -47,18 +51,41 @@ namespace SharedUI.Update.Droid
         {
             //Get the DB from assets if it doesnt exits... 
 
+            string dbPath = Path.Combine(Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "base.db3");
 
+            Console.Write(dbPath);
             //check for the existence of the db in the private app folder
+              if (!File.Exists(dbPath))
+              {
+                  //1. It doesnt exist and 
+                  //a. we need to copy the file from the assets ...
+               
 
 
-            //1. It doesnt exist and 
-                //a. we need to copy the file from the assets ...
-                
-            //2. Open a connection to the sqlite db 
+                  using (var reader = new BinaryReader(Application.Context.Assets.Open("base.db")))
+                  {
+                      using (var writer = new BinaryWriter(new FileStream(dbPath, FileMode.Create)))
+                      {
+                          byte[] buffer = new byte[2048];
+                          int length = 0;
+                          while ((length = reader.Read(buffer, 0, buffer.Length)) > 0)
+                          {
+                              writer.Write(buffer, 0, length);
+                          }
+                      }
+                  }
 
+
+
+              }
+
+
+
+              //2. Open a connection to the sqlite db 
+              
 
             //return the current open connection 
-            return null; 
+            return  new SQLiteConnection(dbPath); 
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] global::Android.Content.PM.Permission[] grantResults)
