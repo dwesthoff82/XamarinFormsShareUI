@@ -33,8 +33,8 @@ namespace Shared.Core
 
 
 				if (el.SourceType == ResourceImage.SourceTypes.Database) {
-					/*
-					var item = App.db.GetResource (el.ResName, 1);
+					
+					var item = ResourceImage.DataAccessLayer.GetResource(int.Parse(el.ResourceName));
 
 					using (var ms = new MemoryStream (item.Data)) {
 						global::Android.Graphics.BitmapFactory.Options options = new global::Android.Graphics.BitmapFactory.Options ();
@@ -49,10 +49,10 @@ namespace Shared.Core
 
 
 							bitmap.Density = global::Android.Graphics.Bitmap.DensityNone;
-							Control.SetImageDrawable (new global::Android.Graphics.Drawables.BitmapDrawable (bitmap));
+							Control.SetImageDrawable (new global::Android.Graphics.Drawables.BitmapDrawable(this.Context.Resources, bitmap));
 						}
 
-					}*/
+					}
 				} else if (el.SourceType == ResourceImage.SourceTypes.File) {
 			
 					using (global::Android.Graphics.BitmapFactory.Options options = new global::Android.Graphics.BitmapFactory.Options ()) {

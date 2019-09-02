@@ -53,7 +53,20 @@ namespace SharedUI.Update
 
             };
 
-            curvedStackLayout.Children.Add(editor);
+
+            CustomEditor customEditor = new CustomEditor
+            {
+                HeightRequest= 200,
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                FontSize = 25,
+                FontName = "agencyr",
+                Text = "This is a custom editor with a custom Font"
+
+
+            };
+         //   curvedStackLayout.Children.Add(editor);
+
+            curvedStackLayout.Children.Add(customEditor);
             curvedStackLayout.Children.Add(new Circle
             {
                 Radius = 20,
@@ -72,9 +85,19 @@ namespace SharedUI.Update
             curvedStackLayout.Children.Add(new Calendar { HorizontalOptions = LayoutOptions.FillAndExpand, HeightRequest = 200});
 
 
+            Label label = new Label { Text = "This is an image from a database" };
 
+            curvedStackLayout.Children.Add(label);
+            ResourceImage ri = new ResourceImage
+            {
+               
+                SourceType = ResourceImage.SourceTypes.Database,
+                ResourceName = "2",
+                HeightRequest = 300,
+                WidthRequest= 300
+            };
 
-
+            curvedStackLayout.Children.Add(ri);
 
             scrollyScroll.Content = curvedStackLayout;
 
